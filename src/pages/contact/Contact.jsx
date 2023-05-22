@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
 
 import {
   FaEnvelopeOpen,
@@ -12,6 +13,20 @@ import {FiSend} from "react-icons/fi"
 import "./Contact.css"
 
 function Contact() {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_9j52zv6', 'template_k851d7o', form.current, '2TEp023kQI1B_bdgq')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
   return (
     <section className="contact section">
       <h2 className="section__title">Get In <span>Touch</span></h2>
@@ -50,11 +65,12 @@ function Contact() {
           </div>
         </div>
 
-        <form className="contact__form">
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
 
           <div className="form__input-group">
             <div className="form__input-div">
               <input 
+                name="user_name"
                 type="text"
                 placeholder='Your Name'
                 className="form__control"
@@ -62,6 +78,7 @@ function Contact() {
             </div>
             <div className="form__input-div">
               <input 
+                name="user_email"
                 type="email"
                 placeholder='Your Email'
                 className="form__control"
@@ -69,6 +86,7 @@ function Contact() {
             </div>
             <div className="form__input-div">
               <input 
+                name="subject"
                 type="text"
                 placeholder='Your Subject'
                 className="form__control"
@@ -78,6 +96,7 @@ function Contact() {
 
           <div className="form__input-div">
             <textarea 
+              name="message"
               placeholder='Your Message' 
               className="form__control textarea"></textarea>
           </div>
