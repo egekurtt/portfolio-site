@@ -18,7 +18,7 @@ import { SiTailwindcss, SiJavascript, SiFirebase } from "react-icons/si"
 import Work1 from './assets/project-1.jpg';
 import Work2 from './assets/project-2.jpg';
 import Work3 from './assets/project-3.jpg';
-import Work4 from './assets/project-4.jpeg';
+import Work4 from './assets/project-4.jpg';
 import Work5 from './assets/project-5.jpg';
 import Work6 from './assets/project-6.jpg';
 
@@ -381,12 +381,40 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'React JS',
+        desc: 'React JS, Firebase, Redux',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: "<a href='https://linkedin-clone-tau-hazel.vercel.app' target='_blank' rel='noreferrer'>Click Here</a>",
+      },
+    ],
+  },
+
+  {
+    id: 4,
+    img: Work4,
+    title: 'Disney+ Clone',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Disney+ Clone',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Clone Website',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React JS, Firebase, Redux',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: "<a href='https://disney-clone-murex.vercel.app' target='_blank' rel='noreferrer'>Click Here</a>",
       },
     ],
   },
