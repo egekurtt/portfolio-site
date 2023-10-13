@@ -337,34 +337,6 @@ export const portfolio = [
 
   {
     id: 2,
-    img: Work2,
-    title: 'Job Consultancy Website',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'Job Consultancy Website',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Type : ',
-        desc: 'Practise Project',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'React JS Tailwind',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: "<a href='https://shey-hiring-pf9d9a5cp-egekurtt.vercel.app' target='_blank' rel='noreferrer'>Click Here</a>",
-      },
-    ],
-  },
-
-  {
-    id: 3,
     img: Work3,
     title: 'LinkedIn Clone',
     details: [
@@ -392,7 +364,7 @@ export const portfolio = [
   },
 
   {
-    id: 4,
+    id: 3,
     img: Work4,
     title: 'Disney+ Clone',
     details: [
@@ -415,6 +387,61 @@ export const portfolio = [
         icon: <FiExternalLink />,
         title: 'Preview : ',
         desc: "<a href='https://disney-clone-murex.vercel.app' target='_blank' rel='noreferrer'>Click Here</a>",
+      },
+    ],
+  },
+  {
+    id: 4,
+    img: Work5,
+    title: 'Netflix Clone',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Netflix Clone',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Clone Website',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React JS, Next JS, Tailwind, mongoDb, prisma',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: "<a href='https://netflix-clone-three-inky.vercel.app/auth' target='_blank' rel='noreferrer'>Click Here</a>",
+      },
+    ],
+  },
+
+  {
+    id: 5,
+    img: Work2,
+    title: 'Job Consultancy Website',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: 'Job Consultancy Website',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Type : ',
+        desc: 'Practise Project',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'React JS Tailwind',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: "<a href='https://shey-hiring-pf9d9a5cp-egekurtt.vercel.app' target='_blank' rel='noreferrer'>Click Here</a>",
       },
     ],
   },
